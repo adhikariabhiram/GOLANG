@@ -1,0 +1,13 @@
+.div1{
+    border: 2px solid black;
+    width: 155px;
+    
+}
+.div2{
+    border: 2px solid black;
+    width: 155px;
+    float: right;
+}
+.mdiv{
+    display: flex;
+}

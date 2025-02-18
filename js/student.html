@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="mydata"></p>
+    <script>
+      function myfun() {
+        fetch("employee.json")
+          .then((response) => response.json())
+          .then((data) => {
+            document.getElementById("mydata").innerHTML = JSON.stringify(data);
+          });
+      }
+    </script>
+    <button onclick="myfun()">click here</button>
+  </body>
+</html>

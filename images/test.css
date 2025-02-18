@@ -1,0 +1,33 @@
+.kmit{
+    background-color: blueviolet;
+    width: 100px;
+    height: 150px;
+    float: left;
+    border-style: solid;
+}
+.ngit{
+    background-color: red;
+    width: 100px;
+    height: 150px;
+    float: left;
+    border-style: solid;
+}
+.main{
+    background-color: black;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.ull{
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper{
+    margin: 30px;
+    display: flex;
+}
+.wrapper input[type="text"]{
+    flex: 1 1 auto;
+}

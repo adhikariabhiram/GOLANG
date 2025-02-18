@@ -1,0 +1,12 @@
+.container{
+  border-style: solid;
+  text-align: center;
+  padding: 40px 20px 20px 40px;
+}
+.form-check-label{
+  text-align: center;
+
+}
+.col{
+  text-align: center;
+}

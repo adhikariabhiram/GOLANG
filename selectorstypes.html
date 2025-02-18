@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>selectors</title>
+    <style>
+      h1 {
+        background-color: orange;
+        color: red;
+      }
+      #head {
+        background-color: yellow;
+        color: orange;
+      }
+      .main {
+        background-color: black;
+        color: whitesmoke;
+      }
+      * {
+        background-color: hsl(350, 70%, 90%, 1);
+        color: #24ff10;
+      }
+      h2,
+      h3 {
+        color: maroon;
+        background-color: hotpink;
+      }
+    </style>
+  </head>
+  <body>
+    <font size="10"> hello world this is" * "universal selector </font>
+    <h1>hello world this is tag name selector</h1>
+    <h1 id="head">hello world this is" # "id selector</h1>
+    <h1 class="main">hello world this is" ." class selector</h1>
+    <h2>hello world this is grouping selector</h2>
+    <h3>hello world this is grouping selector</h3>
+  </body>
+</html>

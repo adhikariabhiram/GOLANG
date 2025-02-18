@@ -1,0 +1,137 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #eef2f5;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    width: 900px;
+    max-width: 90%;
+    flex-wrap: nowrap;
+    align-items: stretch;
+}
+
+.image-section {
+    width: 50%;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    padding: 0;
+    order: 2;
+    background: none;
+    height: auto;
+}
+
+.image-section img {
+    width: 112%;
+    height: auto;
+   object-fit: fill;
+    border-radius: 0;
+}
+
+.form-section {
+    width: 50%;
+    padding: 50px;
+    text-align: left;
+    background: white;
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto 15px;
+    max-width: 80px;
+}
+
+h2 {
+    color: #007bff;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    display: block;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.3);
+}
+
+input:invalid {
+    border-color: red;
+}
+
+.btn {
+    width: 100%;
+    padding: 14px;
+    background: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+.signin-link {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.signin-link a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.signin-link a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .image-section, .form-section {
+        width: 100%;
+    }
+
+    .image-section {
+        padding: 10px;
+    }
+}

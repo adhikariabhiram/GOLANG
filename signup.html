@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image-section">
+            <img src="https://www.talentlms.com/blog/wp-content/uploads/2022/08/hybrid-work-environment.png" alt="Signup Illustration">
+        </div>
+        <div class="form-section">
+            <img src="https://external-preview.redd.it/github-copilot-with-microsoft-visual-studio-v0-6tu2QwvAliANk-cC4Is_8PFPrwxeHeFj_e-fBW9JbCo.jpg?auto=webp&s=e97e278492dd12ee674e710b4931580f4fb66351" alt="Company Logo" class="logo">
+            <h2>Signup</h2>
+            <form action="login.html" method="get">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" name="name" required pattern="[A-Za-z ]{3,}" title="Name must be at least 3 letters">
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" id="password" name="password" required pattern=".{6,}" title="Password must be at least 6 characters long">
+                </div>
+                <div class="form-group">
+                    <label>Confirm Password</label>
+                    <input type="password" id="confirm-password" required>
+                </div>
+                <button type="submit" class="btn">Register</button>
+            </form>
+            <div class="signin-link">Already have an account? <a href="login.html">Sign In</a></div>
+        </div>
+    </div>
+</body>
+</html>

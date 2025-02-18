@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .div-class {
+        width: 400px;
+        height: auto;
+        margin: auto;
+        text-align: center;
+        align-items: inherit;
+        border: 2px;
+        border-color: rgb(70, 27, 27);
+        background-color: gold;
+      }
+      .div-class h2 {
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div-class">
+      <h2>login form</h2>
+      <form action="/index1.html">
+        <label for="fname">First name</label>
+        <input
+          type="text"
+          name="fname"
+          id="fname"
+          value=""
+          placeholder="First name"
+        />
+        <br />
+        <label for="lname">Last name:</label>
+        <input
+          type="text"
+          name="lname"
+          id="lname"
+          value=""
+          placeholder="Last name"
+        />
+        <br />
+        <label for="gender">gender:</label>
+        <input type="radio" name="gender" id="" /><label>male</label>
+        <input type="radio" name="gender" id="" /><lable>female</lable>
+        <br />
+        <br />
+        <label for="study">studies</label>
+        <input type="checkbox" name="study" id="" /><label>ssc</label>
+        <input type="checkbox" name="study" id="" /><label>cbse</label>
+        <input type="checkbox" name="study" id="" /><label>icse</label>
+        <input type="checkbox" name="study" id="" /><label>inter</label>
+        <br />
+        <br />
+
+        <lable for="email">email</lable>
+        <input type="text" name="email" id="email" placeholder="Emailid " />
+        <br />
+        <lable for="pin">password</lable>
+        <input
+          type="password"
+          name="pin"
+          id="pin"
+          size="20"
+          placeholder="password"
+          required
+          minlength="4"
+          maxlength="8"
+          size="10"
+          alt="enter password"
+        />
+        <br />
+        <br />
+        <label for="aadhar number">aadhar</label>
+        <input
+          type="number"
+          name="aadhar"
+          id="aadhar"
+          placeholder="aadhar number"
+          maxlength="12"
+        />
+        <br />
+        <lable for="age">age</lable>
+        <input type="number" name="age" id="age" min="5" />
+        <br />
+        <br />
+        <label for="address">address</label>
+        <textarea
+          name="adress"
+          id="adress"
+          cols="30"
+          rows="10"
+          placeholder="address"
+        ></textarea>
+        <br />
+        <br />
+        <lable for="country">country</lable>
+        <select id="country" name="country" class="form-control">
+          <option value="Afghanistan">Afghanistan</option>
+          <option value="INDIA">INDIA</option>
+          <option value="Albania">Albania</option>
+          <option value="Algeria">Algeria</option>
+        </select>
+
+        <br />
+        <br />
+
+        <input type="submit" value="submit" />
+        <script>
+          function myFunction() {
+            consolelog("submit").style.color = "red";
+          }
+        </script>
+      </form>
+    </div>
+  </body>
+</html>
