@@ -1,3 +1,3 @@
-module GOLANG
+module github.com/adhikariabhiram/GOLANG
 
-go 1.24.0
+go 1.24
